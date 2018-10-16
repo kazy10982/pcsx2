@@ -141,9 +141,6 @@ public:
 	virtual ~SysCpuProviderPack();
 
 	void ApplyConfig() const;
-#ifndef DISABLE_SVU
-	BaseVUmicroCPU* getVUprovider(int whichProvider, int vuIndex) const;
-#endif
 
 	bool HadSomeFailures( const Pcsx2Config::RecompilerOptions& recOpts ) const;
 
